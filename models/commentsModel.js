@@ -16,6 +16,18 @@ const commentSchema = mongoose.Schema({
     emoji:{
         type:String,
         required:true
+    },
+    seen:{
+        type:Boolean,
+        required:false
+    },
+    reply:{
+        type:Array,
+        required:false
+    },
+    from:{
+        type:String,
+        required:false
     }
 },
     {
